@@ -5,7 +5,13 @@ processors:
   - type: smart
   - type: crossref
 renderer:
-  type: mkdocs
+  type: hugo
+  config:
+    title: My Project
+    theme: {clone_url: "https://github.com/alex-shpak/hugo-book.git"}
+  # The "book" theme only renders pages in "content/docs" into the nav.
+  content_directory: content/docs
+  default_preamble: {menu: main}
   pages:
     - title: Home
       name: index
@@ -14,7 +20,3 @@ renderer:
       children:
         - title: my_project
           content: [ my_project, my_project.* ]
-  mkdocs_config:
-    site_name: My Project
-    theme: readthedocs
-    repo_url: https://github.com/Me/my-project
