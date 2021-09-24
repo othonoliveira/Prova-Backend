@@ -1,0 +1,1 @@
+cd C:\Users\almin\Documents\MeusProjetos\Prova-Backend>flask run
