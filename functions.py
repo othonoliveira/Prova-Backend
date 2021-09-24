@@ -1,3 +1,7 @@
+'''
+Funcões que retornam a soma maxima e as posições para o retorno
+'''
+
 def max_sum(b=dict()):
     A=b.copy()
     max_so_far = 0
